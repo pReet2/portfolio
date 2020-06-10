@@ -1,0 +1,171 @@
+@import("https://fonts.google.com/specimen/Caveat?sidebar.open&selection.family=Caveat:wght@700");
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    background-color: #78e08f;
+    color: white;
+    letter-spacing: 0.2rem;
+}
+
+.nav-item a:hover{
+    color: red;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.num{
+    color: black;
+    text-decoration: none;
+}
+.intro{
+    padding: 60px;
+    font-family: 'Caveat', cursive;
+    
+}
+.image img{
+  animation: skew 1s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
+
+}
+
+@keyframes skew {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+
+.projects{
+    padding: 60px;
+}
+
+
+
+.ml12 {
+  
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml14 {
+  font-size: 1.5em;
+}
+
+.ml14 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml14 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 100% 100%;
+  bottom: 0;
+}
+
+.ml14 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+.design{
+    padding-top: 40px;
+}
+
+.view{
+    
+    height: 40px;
+    padding: 10px;
+    background-color: #0be881;
+    color: white;
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+.card{
+    display: block;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.view-resume{
+    width: 250px;
+    height: 50px;
+    padding: 5px;
+    background-color: #0be881;
+    color: white;
+    text-align: center;    
+}
+
+.icon-resume:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.card{
+    border-color: green;
+    padding: 20px;
+}
+#contact{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+h3,h4,h5{
+    letter-spacing: 0.5rem;
+}
+
+#footer{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+@media only and screen(max-width:486px){
+    .img-avatar{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .view-resume{
+        width: 100%;
+        margin: auto;
+    }
+}
